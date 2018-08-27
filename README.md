@@ -7,7 +7,7 @@
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save arr-diff
+$ npm install --save febraban-bancos
 ```
 
 ## Usage

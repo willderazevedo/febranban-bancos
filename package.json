@@ -1,6 +1,6 @@
 {
   "name": "febraban-bancos",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Plugin reponsável por listar os bancos do Brasil de acordo com o Febranban",
   "main": "index.js",
   "scripts": {
