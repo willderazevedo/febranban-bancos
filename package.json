@@ -1,0 +1,30 @@
+{
+  "name": "febraban-bancos",
+  "version": "1.0.5",
+  "description": "Plugin reponsável por listar os bancos do Brasil de acordo com o Febranban",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willderazevedo/febranban-bancos.git"
+  },
+  "keywords": [
+    "Febraban",
+    "Api",
+    "Bancos"
+  ],
+  "author": "Willder Azevedo (https://github.com/willderazevedo/febranban-bancos)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willderazevedo/febranban-bancos/issues"
+  },
+  "homepage": "https://github.com/willderazevedo/febranban-bancos#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jsdom": "^12.0.0",
+    "request": "^2.88.0"
+  }
+}
