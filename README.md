@@ -10,18 +10,6 @@ Install with [npm](https://www.npmjs.com/):
 $ npm install --save arr-diff
 ```
 
-Install with [yarn](https://yarnpkg.com):
-
-```sh
-$ yarn add arr-diff
-```
-
-Install with [bower](https://bower.io/)
-
-```sh
-$ bower install arr-diff --save
-```
-
 ## Usage
 
 Uso no JS básico
