@@ -2,15 +2,15 @@
 
 > Retorna um array com todos os bancos Brasileiros relacionados ao Febraban
 
-## Install
+## Como instalar
 
-Install with [npm](https://www.npmjs.com/):
+Instalar usando [npm](https://www.npmjs.com/):
 
 ```sh
 $ npm install --save febraban-bancos
 ```
 
-## Usage
+## Modo de usar
 
 Uso no JS básico
 
@@ -42,13 +42,13 @@ FebranbanBanks.getBanks();
 ```bash
 $ node <seu_arquivo_com_require_acima>.js -l ou --log
 ```
-### Author
+### Autor
 
 **Willder Azevedo**
 
 * [github/willderazevedo](https://github.com/willderazevedo)
 
-### License
+### Licença
 
 Copyright © 2018, [Willder Azevedo](https://github.com/willderazevedo).
 Released under the [MIT License](LICENSE).
