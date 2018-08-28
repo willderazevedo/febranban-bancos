@@ -39,7 +39,7 @@ class FebrabanBanks {
                     
                     columns.each((index, element) => {
                         if (index == 0) {
-                            objectAux["code"] = $.trim($(element).text());
+                            objectAux["code"] = $.trim($(element).text()).replace(/[-!$%^&*()_+|~=`{}\[\]:";\'<>?,.\/@#]/gm, '');
                             
                             return true;
                         }
