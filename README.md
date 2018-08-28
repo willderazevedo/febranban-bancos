@@ -15,10 +15,10 @@ $ npm install --save febraban-bancos
 Uso no JS básico
 
 ```js
-var FebranbanBanks = require('febraban-bancos');
+var FebrabanBanks = require('febraban-bancos');
 
 
-console.log(FebranbanBanks.getBanks())
+console.log(FebrabanBanks.getBanks())
 /*
 [
   {
@@ -33,10 +33,10 @@ console.log(FebranbanBanks.getBanks())
 Uso na linha de comando (PHP ou outros)
 
 ```js
-var FebranbanBanks = require('febraban-bancos');
+var FebrabanBanks = require('febraban-bancos');
 
 
-FebranbanBanks.getBanks();
+FebrabanBanks.getBanks();
 ```
 
 ```bash

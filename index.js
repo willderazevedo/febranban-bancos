@@ -59,5 +59,3 @@ class FebrabanBanks {
 }
 
 module.exports = FebrabanBanks;
-
-FebrabanBanks.getBanks();
