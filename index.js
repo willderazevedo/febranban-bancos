@@ -19,9 +19,9 @@ var $ = require('jquery')(window);
 
 class FebrabanBanks {
 
-    static async getBanks()
+    static getBanks()
     {
-        return await new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {
             request("https://www.febraban.org.br/associados/utilitarios/bancos.asp", (error, response, body) => {
                 if (error) {
                     reject(error);

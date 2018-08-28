@@ -21,7 +21,7 @@ FebrabanBanks.getBanks().then(data => {
   // Do your stuff
 }).catch(err => {
   // Do your stuff
-})
+});
 ```
 
 ## Return
