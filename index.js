@@ -19,41 +19,43 @@ var $ = require('jquery')(window);
 
 class FebrabanBanks {
 
-    static getBanks()
+    static async getBanks()
     {
-        request("https://www.febraban.org.br/associados/utilitarios/bancos.asp", function(error, response, body) {
-            let html        = $(body);
-            let banksHtml   = html.find('tbody tr:nth-child(n+5)');
-            let banksObject = [];
+        return await new Promise((resolve, reject) => {
+            request("https://www.febraban.org.br/associados/utilitarios/bancos.asp", (error, response, body) => {
+                if (error) {
+                    reject(error);
 
-            banksHtml.each(function (index, element) {
-                let objectAux = {};
-                let columns   = $(element).find('td:nth-child(-n + 2)');
-                
-                columns.each(function (index, element) {
-                    if (index == 0) {
-                        objectAux["code"] = $.trim($(element).text());
-                        
+                    return false;
+                }
+
+                let banksObject = [];
+                let html        = $(body);
+                let banksHtml   = html.find('tbody tr:nth-child(n+5)');
+
+                banksHtml.each((index, element) => {
+                    let objectAux = {};
+                    let columns   = $(element).find('td:nth-child(-n + 2)');
+                    
+                    columns.each((index, element) => {
+                        if (index == 0) {
+                            objectAux["code"] = $.trim($(element).text());
+                            
+                            return true;
+                        }
+
+                        objectAux["name"] = $.trim($(element).text());
+                    });
+
+                    if (!objectAux.code) {
                         return true;
                     }
 
-                    objectAux["name"] = $.trim($(element).text());
+                    banksObject.push(objectAux);
                 });
 
-                if (!objectAux.code) {
-                    return true;
-                }
-
-                banksObject.push(objectAux);
+                resolve(banksObject);
             });
-            
-            if (process.argv.includes('--log', 2) || process.argv.includes('-l', 2)) {
-                console.log(banksObject);
-
-                return false;
-            }
-
-            return banksObject;
         });
     }
 }

@@ -1,54 +1,47 @@
 # febraban-bancos [![NPM version](https://img.shields.io/npm/v/arr-diff.svg?style=flat)](https://www.npmjs.com/package/febraban-bancos) [![NPM monthly downloads](https://img.shields.io/npm/dm/arr-diff.svg?style=flat)](https://npmjs.org/package/febraban-bancos)
 
-> Retorna um array com todos os bancos Brasileiros relacionados ao Febraban
+> Returns a array with all Brazilian banks relationed with Febraban
 
-## Como instalar
+## Install
 
-Instalar usando [npm](https://www.npmjs.com/):
+Install using [npm](https://www.npmjs.com/):
 
 ```sh
 $ npm install --save febraban-bancos
 ```
 
-## Modo de usar
+## How to use
 
-Uso no JS básico
+Create your js file and do as below
 
 ```js
 var FebrabanBanks = require('febraban-bancos');
 
+FebrabanBanks.getBanks().then(data => {
+  // Do your stuff
+}).catch(err => {
+  // Do your stuff
+})
+```
 
-console.log(FebrabanBanks.getBanks())
-/*
+## Return
+
+```json
 [
   {
-    "code": "001",
+    "code": "101",
     "name": "Banco do Brasil"
-  }
-  ...
+  },
 ]
-*/
 ```
 
-Uso na linha de comando (PHP ou outros)
-
-```js
-var FebrabanBanks = require('febraban-bancos');
-
-
-FebrabanBanks.getBanks();
-```
-
-```bash
-$ node <seu_arquivo_com_require_acima>.js -l ou --log
-```
-### Autor
+### Author
 
 **Willder Azevedo**
 
 * [github/willderazevedo](https://github.com/willderazevedo)
 
-### Licença
+### License
 
 Copyright © 2018, [Willder Azevedo](https://github.com/willderazevedo).
 Released under the [MIT License](LICENSE).
