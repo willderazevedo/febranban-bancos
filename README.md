@@ -1,4 +1,4 @@
-# febraban-bancos [![NPM version](https://img.shields.io/npm/v/arr-diff.svg?style=flat)](https://www.npmjs.com/package/febraban-bancos) [![NPM monthly downloads](https://img.shields.io/npm/dm/arr-diff.svg?style=flat)](https://npmjs.org/package/febraban-bancos)
+# febraban-bancos [![NPM version](https://img.shields.io/npm/v/febraban-bancos.svg?style=flat)](https://www.npmjs.com/package/febraban-bancos) [![NPM monthly downloads](https://img.shields.io/npm/dm/febraban-bancos.svg?style=flat)](https://npmjs.org/package/febraban-bancos)
 
 > Returns a array with all Brazilian banks relationed with Febraban
 
