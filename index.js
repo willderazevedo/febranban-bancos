@@ -22,7 +22,7 @@ class FebrabanBanks {
     static getBanks()
     {
         return new Promise((resolve, reject) => {
-            request("https://www.febraban.org.br/associados/utilitarios/bancos.asp", (error, response, body) => {
+            request({'uri': 'https://www.febraban.org.br/associados/utilitarios/bancos.asp', 'encoding': 'latin1'}, (error, response, body) => {
                 if (error) {
                     reject(error);
 
